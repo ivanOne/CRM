@@ -1,0 +1,18 @@
+<div class="row widgetTime">
+    <div class="col-lg-12">
+        <h5 class="text-center"><b><?= $date;?></b></h5>
+        <p id="widgetClock" class="text-center"></p>
+    </div>
+    <div class="col-lg-12">
+        <h4>Менеджеры:</h4>
+        <? foreach($manList as $name => $telnum){?>
+            <p><?= $name ?><br> <?= $telnum?></p>
+        <?}?>
+    </div>
+    <div class="col-lg-12">
+        <h4>Инженеры:</h4>
+        <? foreach($engList as $name => $telnum){?>
+            <p><?= $name ?><br> <?= $telnum?></p>
+        <?}?>
+    </div>
+</div>
